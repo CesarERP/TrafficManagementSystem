@@ -1,0 +1,9 @@
+﻿@model TrafficManagementSystem.Models.ErrorViewModel
+
+<div class="text-danger">
+    <h1 class="display-4">An error occurred.</h1>
+    @if (Model?.ShowRequestId == true)
+    {
+        <p>Request ID: <code>@Model.RequestId</code></p>
+    }
+</div>

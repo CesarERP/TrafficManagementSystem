@@ -1,0 +1,42 @@
+﻿@model TrafficManagementSystem.Models.Vehiculo
+
+@{
+    ViewData["Title"] = "Editar Vehículo";
+}
+
+<h1>Editar Vehículo</h1>
+
+<form asp-action="EditVehiculo" method="post">
+    <input type="hidden" asp-for="IDVehiculo" />
+    <div class="form-group">
+        <label for="Placa">Placa</label>
+        <input asp-for="Placa" class="form-control" />
+        <span asp-validation-for="Placa" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Marca">Marca</label>
+        <input asp-for="Marca" class="form-control" />
+        <span asp-validation-for="Marca" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Modelo">Modelo</label>
+        <input asp-for="Modelo" class="form-control" />
+        <span asp-validation-for="Modelo" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Año">Año</label>
+        <input asp-for="Año" class="form-control" />
+        <span asp-validation-for="Año" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Color">Color</label>
+        <input asp-for="Color" class="form-control" />
+        <span asp-validation-for="Color" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Propietario">Propietario</label>
+        <input asp-for="Propietario" class="form-control" />
+        <span asp-validation-for="Propietario" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
